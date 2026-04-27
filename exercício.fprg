@@ -4,23 +4,24 @@
         <attribute name="name" value="cashBack e desconto"/>
         <attribute name="authors" value="I1HSA"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-27 09:12:15 "/>
+        <attribute name="saved" value="2026-04-27 09:20:35 "/>
         <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMTM7IjA5OjA4OjQ0ICI7MjQyMA=="/>
         <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjEyOjEwICI7MTtJMUhTQTtFQ0ZQNTEyTjEyNjI4Mjc7MjAyNi0wNC0xMzsiMDk6NTI6NDkgIjtBbHR1cmEgcGFyYSBlbnRyYXIgbm8gYnJpbnF1ZWRvLmZwcmc7ODU0Nw=="/>
-        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjEyOjE1ICI7MjsyNTI3"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjIwOjMyICI7MTtJMUhTQTtFQ0ZQNTEyTjEyNjI4Mjc7MjAyNi0wNC0xMzsiMDg6MzY6MTUgIjtTMV9SNC1BVDJfTE9QQUwuZnByZzs2NjEz"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjIwOjM1ICI7MzsyNTI5"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="Altura" type="Real" array="False" size=""/>
-            <output expression="&quot;qual a sua altura?&quot;" newline="True"/>
-            <input variable="Altura"/>
-            <if expression="Altura&gt;1.40">
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;digita um numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <if expression="numero % 2 = 0">
                 <then>
-                    <output expression="&quot;voc&#234; tem altura suficiente , pode entrar no brinquedo&quot;" newline="True"/>
+                    <output expression="&quot;esse numero &#233; par&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;altura insuficiente voc&#234; n&#227;o pode entrar no brinquedo&quot;" newline="True"/>
+                    <output expression="&quot;esse numero &#233; impar&quot;" newline="True"/>
                 </else>
             </if>
         </body>
