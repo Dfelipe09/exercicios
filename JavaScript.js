@@ -1,19 +1,15 @@
-let num;
-num = Number(prompt("digite um número qualquer: "));
+let senha;
+senha = prompt("cadastre a sua senha: ");
+let conf;
+conf = prompt("confirme a sua senha: ");
 
-if ( isNaN(num)) {
+if (senha == conf) {
 
-    alert("você não digitou um número!")
+    alert("acesso liberado")
 
 }
 else {
 
-    if (num % 2 == 0) {
+    alert ("senha incorreta")
 
-        alert(num + "é um numero par.")
-
-    } 
-    else {
-        alert (num +"é um  número impar.")
-    }
-}
+};
