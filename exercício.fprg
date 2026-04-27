@@ -4,24 +4,23 @@
         <attribute name="name" value="cashBack e desconto"/>
         <attribute name="authors" value="I1HSA"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-13 09:51:27 "/>
+        <attribute name="saved" value="2026-04-27 09:12:15 "/>
         <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMTM7IjA5OjA4OjQ0ICI7MjQyMA=="/>
-        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMTM7IjA5OjUxOjI3ICI7MTsyNTI3"/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjEyOjEwICI7MTtJMUhTQTtFQ0ZQNTEyTjEyNjI4Mjc7MjAyNi0wNC0xMzsiMDk6NTI6NDkgIjtBbHR1cmEgcGFyYSBlbnRyYXIgbm8gYnJpbnF1ZWRvLmZwcmc7ODU0Nw=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMjc7IjA5OjEyOjE1ICI7MjsyNTI3"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="valorCompra, valorComDesconto, cashBack" type="Real" array="False" size=""/>
-            <output expression="&quot;digite o valor da compra&quot;" newline="True"/>
-            <input variable="valorCompra"/>
-            <if expression="valorCompra&gt;150">
+            <declare name="Altura" type="Real" array="False" size=""/>
+            <output expression="&quot;qual a sua altura?&quot;" newline="True"/>
+            <input variable="Altura"/>
+            <if expression="Altura&gt;1.40">
                 <then>
-                    <assign variable="valorComDesconto" expression="valorCompra - valorCompra * 0.02"/>
-                    <output expression="&quot;O valor compra foi &quot; &amp; valorCompra &amp; &quot; e o valor com o desconto foi : &quot; &amp; valorComDesconto" newline="True"/>
+                    <output expression="&quot;voc&#234; tem altura suficiente , pode entrar no brinquedo&quot;" newline="True"/>
                 </then>
                 <else>
-                    <assign variable="cashBack" expression="valorCompra * 0.02"/>
-                    <output expression="&quot;O seu cashback &#233; de : &quot; &amp; cashBack" newline="True"/>
+                    <output expression="&quot;altura insuficiente voc&#234; n&#227;o pode entrar no brinquedo&quot;" newline="True"/>
                 </else>
             </if>
         </body>
