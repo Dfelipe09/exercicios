@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="cashBack e desconto"/>
+        <attribute name="authors" value="I1HSA"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-13 09:51:27 "/>
+        <attribute name="created" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMTM7IjA5OjA4OjQ0ICI7MjQyMA=="/>
+        <attribute name="edited" value="STFIU0E7RUNGUDUxMk4xMjYyODI3OzIwMjYtMDQtMTM7IjA5OjUxOjI3ICI7MTsyNTI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorCompra, valorComDesconto, cashBack" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o valor da compra&quot;" newline="True"/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra&gt;150">
+                <then>
+                    <assign variable="valorComDesconto" expression="valorCompra - valorCompra * 0.02"/>
+                    <output expression="&quot;O valor compra foi &quot; &amp; valorCompra &amp; &quot; e o valor com o desconto foi : &quot; &amp; valorComDesconto" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="cashBack" expression="valorCompra * 0.02"/>
+                    <output expression="&quot;O seu cashback &#233; de : &quot; &amp; cashBack" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
